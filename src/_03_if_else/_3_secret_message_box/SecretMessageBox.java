@@ -11,11 +11,21 @@ import javax.swing.JOptionPane;
  * You want to leave a message on one of the Mac computers so that only your friend can read it.
  * You set up the passcode and the secret message. 
  * Your friend types in the passcode to retrieve the message.
- * 
+ * sgnsrjardgejdmheyiktdmhshquweytkdmsntjw65i7keu
  */
 
 public class SecretMessageBox {
-
+public static void main(String[] args) {
+	String password = "password";
+	String secretMessage= JOptionPane.showInputDialog("What secret message do u want to store?");
+	String answer= JOptionPane.showInputDialog("What is the password");
+	if (answer.equalsIgnoreCase(password)) {
+		JOptionPane.showMessageDialog(null, secretMessage);
+	}
+	else {
+		JOptionPane.showMessageDialog(null, "YERR AN INTRUDER");
+	}
+}
 	// 0. Make a main method and put steps 1-5 inside it
 	
 	// 1. Set a password in a String variable

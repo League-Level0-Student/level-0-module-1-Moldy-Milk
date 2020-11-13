@@ -5,3 +5,7 @@ fill(0,255,0,100);
 ellipse(300,200,200,200);
 fill(0,0,255,100);
 ellipse(250,300,200,200);
+textSize(20);
+text("Eats", 150,200);
+text("Sleeps", 325,200);
+text("Breathes", 225, 350);
